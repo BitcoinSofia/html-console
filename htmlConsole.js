@@ -79,7 +79,8 @@ htmlConsole = (function () {
                 if (sentInputs.length === 0 || line !== sentInputs[0])
                     sentInputs.unshift(line);
                 console.log(">> " + line);
-                var result = eval(line);
+                try { var result = eval(line); }
+                catch (err) { console.error(err.message); }
                 console.log("<< " + result);
             }
             else if (event.key === "ArrowUp") {
