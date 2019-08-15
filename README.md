@@ -13,6 +13,11 @@
     </script>
 ```
 
+or if you are lazier than usual, you can also do this:
+```html
+    <script src="https://raw.githack.com/BitcoinSofia/html-console/master/htmlConsole.js"></script>
+```
+
 # When is this Useful?
 
 ### Mostly for debugging websites on a smartphone or a tablet.
