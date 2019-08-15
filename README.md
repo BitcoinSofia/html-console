@@ -14,8 +14,14 @@ A simple Debug Console inside the HTML itself.
 ```
 
 or if you are lazier than usual, you can also do this:
+
 ```html
     <script src="https://raw.githack.com/BitcoinSofia/html-console/master/htmlConsole.js"></script>
+    <div id="console-area"></div>
+    <script>
+        htmlConsole.create(document.getElementById("console-area"));
+        console.log("This is magic!");
+    </script>
 ```
 
 # When is this Useful?
